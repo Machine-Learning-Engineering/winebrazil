@@ -52,15 +52,14 @@ Abaixo a estrura de pasta do projeto
 ```
 
 * **app.py** - arquivo de inicialização
-** Conatainerfile - arquivo de construção da imagem de container
-** database - pasta contendo os arquivos de dados
-** requirements.txt - arquivo contendo as dependências do projeto
-** security - pasta contendo os arquivos de segurança
-** service - pasta contendo os arquivos de serviços
-** swagger - pasta contendo os arquivos de documentação das APIs
-** templates - pasta contendo os arquivos de templates
-
-
+* **README.md** - arquivo de documentação do projeto
+* **Containerfile** - arquivo de construção da imagem de container
+* **database** - pasta contendo os arquivos de dados                
+* **requirements.txt** - arquivo contendo as dependências do projeto
+* **security** - pasta contendo os arquivos de segurança
+* **service** - pasta contendo os arquivos de serviços
+* **swagger** - pasta contendo os arquivos de documentação das APIs
+* **templates** - pasta contendo os arquivos de templates
 
 ## Executando localmente
 

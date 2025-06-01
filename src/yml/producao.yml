@@ -1,4 +1,3 @@
-# filepath: /home/parraes/winebrazil/src/yml/producao.yml
 tags:
   - producao
 consumes:
@@ -8,7 +7,6 @@ parameters:
     in: query
     type: string
     required: false
-    default: VINHO DE MESA, VINHO FINO DE MESA (VINIFERA), SUCO, DERIVADOS
     description: Produto a ser consultado
   - name: ano
     in: query

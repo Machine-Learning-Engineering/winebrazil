@@ -1,25 +1,22 @@
-# filepath: /home/parraes/winebrazil/src/yml/comercializacao.yml
+
 tags:
-  - Comercializacao
+  - processamento
 consumes:
-  - application/json
+  - application/x-www-form-urlencoded
 parameters:
-  - in: body
-    name: body
-    required: true
-    schema:
-      type: object
-      properties:
-        produto:
-          type: string
-        quantidade:
-          type: integer
-      required:
-        - produto
-        - quantidade
+  - name: cultivar
+    in: query
+    type: string
+    required: false
+    description: cultivar a ser consultado
+  - name: ano
+    in: query
+    type: integer
+    required: false
+    description: Ano da produção
 responses:
   200:
-    description: Comercialização processada com sucesso
+    description: Consulta processada com sucesso
     schema:
       type: object
       properties:

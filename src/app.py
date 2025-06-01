@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, jsonify
 from flasgger import Swagger, swag_from
 from download import atualizar_dados
 from producao import consultar_producao
+from processamento import consultar_processamento
 
 app = Flask(__name__)
 
@@ -32,10 +33,13 @@ def exportacao():
 def importacao():
     return jsonify({"message": "Importação endpoint is not implemented yet."})
 
-@app.route('/processamento', methods=['POST'])
+@app.route('/processamento', methods=['GET'])
 @swag_from('yml/processamento.yml')
 def processamento():
-    return jsonify({"message": "Processamento endpoint is not implemented yet."})
+    ano = request.args.get('ano')
+    cultivar = request.args.get('cultivar')
+    resultado, status = consultar_processamento(ano=ano, cultivar=cultivar)
+    return jsonify(resultado), status
 
 @app.route('/producao', methods=['GET'])
 @swag_from('yml/producao.yml')

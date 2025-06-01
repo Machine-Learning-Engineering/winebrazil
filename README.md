@@ -1,2 +1,87 @@
 # winebrazil
-API para consulta de no banco de dados de viticultura brasileira
+API para consulta de no banco de dados de viticultura brasileira.
+
+## Requisitos
+* podman version 5.5.0
+* Python-311
+* Fedora release 41 (Forty One)
+
+## Sumary
+* [Compile and Run](#compile-and-run)
+    * [Compiling source code](#compiling-source-code)
+    * [Build a container image](#build-a-container-image)
+    * [Running the container](#running-the-container)
+        * [Runnig the container using podman](#runnig-the-container-using-podman)
+        * [Runnig the container using OpenShift](#runnig-the-container-using-openshift)
+* [Using api to create users](#using-api-to-create-users)
+* [Using api to drop users](#using-api-to-drop-users)
+
+## Estrutura do projeto
+Abaixo a estrura de pasta do projeto
+```bash
+.
+├── app.py
+├── Containerfile
+├── database
+│   ├── comercializacao.csv
+│   ├── exportacao.csv
+│   ├── importacao.csv
+│   ├── processamento.csv
+│   └── producao.csv
+├── README.md
+├── requirements.txt
+├── security
+│   └── valida_acesso.py
+├── service
+│   ├── comercializacao.py
+│   ├── download.py
+│   ├── exportacao.py
+│   ├── importacao.py
+│   ├── processamento.py
+│   └── producao.py
+├── swagger
+│   ├── atualiza_base.yml
+│   ├── comercializacao.yml
+│   ├── exportacao.yml
+│   ├── importacao.yml
+│   ├── login.yml
+│   ├── processamento.yml
+│   └── producao.yml
+└── templates
+    └── index.html
+```
+
+** app.py - arquivo de inicialização
+** Conatainerfile - arquivo de construção da imagem de container
+** database - pasta contendo os arquivos de dados
+** requirements.txt - arquivo contendo as dependências do projeto
+** security - pasta contendo os arquivos de segurança
+** service - pasta contendo os arquivos de serviços
+** swagger - pasta contendo os arquivos de documentação das APIs
+** templates - pasta contendo os arquivos de templates
+
+
+
+## Executando localmente
+
+Para executar aplicação localmente é recomendando a validação dos requisitos listados acima, caso opte por não realizar este passo, é possível gerar a imagem de container, baixar diretamente do repositório remoto ou ainda executar diretamente da cloud.
+
+### Configurando ambiente virtual
+
+```bash
+$ python -m venv env
+```
+
+
+
+
+## Gerando container image
+
+## Baixando imagem de repositório (quay.io)
+
+## Executando container image
+
+## Executando na cloud
+
+## Realizando testes nas APIs
+``

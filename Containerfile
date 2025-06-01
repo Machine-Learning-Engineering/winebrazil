@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi8/python-311:latest
 
-LABEL maintainer="Pedro Salves Arraes Neto <pedroarraes@gmail.com>"
-LABEL maintainer="Rogério Santos <rogeriosantos@gmail.com>"
+LABEL maintainer="Pedro Arraes <pedroarraes@gmail.com>"
+LABEL maintainer="Rogério Santos <br.roglusa@gmail.com>"
 LABEL maintainer="Juares Junior <jzs.jjunior@gmail.com>"
 
 LABEL name="Wine Brazil API"

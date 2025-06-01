@@ -100,17 +100,29 @@ Abra o navegador e acesse o seguinte endereço:
 http://127.0.0.1:5000
 ```
 
-### Assando swagger
+### Acessando swagger
 Para acessar a documentação das APIs, abra o navegador e acesse o seguinte endereço:
 ```
 http://127.0.0.1:5000/apidocs
 ```
 
 ## Gerando container image
+Para gerar a imagem de container, execute o seguinte comando no terminal:
+```bash
+$ podman build . -t winebrazil:v1.0
+```
 
 ## Baixando imagem de repositório (quay.io)
+Para baixar a imagem de container do repositório quay.io, execute o seguinte comando no terminal:
+```bash
+$ podman pull quay.io/parraes/winebrazil:v1.0
+```
 
 ## Executando container image
+Para executar a imagem de container, execute o seguinte comando no terminal:
+```bash
+$ podman run -d -p 5000:5000 winebrazil:v1.0
+```
 
 ## Executando na cloud
 

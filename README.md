@@ -67,12 +67,44 @@ Para executar aplicação localmente é recomendando a validação dos requisito
 
 ### Configurando ambiente virtual
 
+Para configurar o ambiente virtual, execute o seguinte comando no terminal:
 ```bash
 $ python -m venv env
 ```
 
+### Ativando ambiente virtual
+Para ativar o ambiente virtual, execute o seguinte comando no terminal:
+```bash
+$ source env/bin/activate
+```
 
+### Atualizando pip
+Para atualizar o pip, execute o seguinte comando no terminal:
+```bash
+$ pip install --upgrade pip
+```
 
+### Instalando dependências
+Para instalar as dependências do projeto, execute o seguinte comando no terminal:
+```bash
+$ pip install -r requirements.txt
+```
+### Executando aplicação
+Para executar a aplicação, execute o seguinte comando no terminal:
+```bash
+$ python app.py
+```
+### Acessando a aplicação
+Abra o navegador e acesse o seguinte endereço:
+```
+http://127.0.0.1:5000
+```
+
+### Assando swagger
+Para acessar a documentação das APIs, abra o navegador e acesse o seguinte endereço:
+```
+http://127.0.0.1:5000/apidocs
+```
 
 ## Gerando container image
 

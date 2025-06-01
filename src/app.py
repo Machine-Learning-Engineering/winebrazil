@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, jsonify
 from flasgger import Swagger, swag_from
-
+from download import atualizar_dados
+from producao import consultar_producao
 
 app = Flask(__name__)
 
@@ -36,11 +37,23 @@ def importacao():
 def processamento():
     return jsonify({"message": "Processamento endpoint is not implemented yet."})
 
-@app.route('/producao', methods=['POST'])
+@app.route('/producao', methods=['GET'])
 @swag_from('yml/producao.yml')
 def producao():
-    return jsonify({"message": "Produção endpoint is not implemented yet."})
+    ano = request.args.get('ano')
+    produto = request.args.get('produto')
+    resultado, status = consultar_producao(ano=ano, produto=produto)
+    return jsonify(resultado), status
 
+
+@app.route('/atualiza_base', methods=['GET'])
+@swag_from('yml/atualiza_base.yml')
+def atualiza_base():
+    sucesso = atualizar_dados()
+    if sucesso:
+        return jsonify({"message": "Base de dados atualizada com sucesso."})
+    else:
+        return jsonify({"message": "Erro ao atualizar a base de dados."}), 500
 
 
 @app.route('/')

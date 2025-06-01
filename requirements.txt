@@ -1,3 +1,7 @@
 gunicorn==21.2.0
 Flask==3.1.0
 flasgger==0.9.7.1
+requests
+python-dotenv
+PyJWT
+pandas

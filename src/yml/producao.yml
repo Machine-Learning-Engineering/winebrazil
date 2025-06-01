@@ -1,25 +1,23 @@
-# filepath: /home/parraes/winebrazil/src/yml/comercializacao.yml
+# filepath: /home/parraes/winebrazil/src/yml/producao.yml
 tags:
-  - Comercializacao
+  - producao
 consumes:
-  - application/json
+  - application/x-www-form-urlencoded
 parameters:
-  - in: body
-    name: body
-    required: true
-    schema:
-      type: object
-      properties:
-        produto:
-          type: string
-        quantidade:
-          type: integer
-      required:
-        - produto
-        - quantidade
+  - name: produto
+    in: query
+    type: string
+    required: false
+    default: VINHO DE MESA, VINHO FINO DE MESA (VINIFERA), SUCO, DERIVADOS
+    description: Produto a ser consultado
+  - name: ano
+    in: query
+    type: integer
+    required: false
+    description: Ano da produção
 responses:
   200:
-    description: Comercialização processada com sucesso
+    description: Consulta processada com sucesso
     schema:
       type: object
       properties:

@@ -1,8 +1,13 @@
 from flask import Flask, request, render_template, jsonify
 from flasgger import Swagger, swag_from
-from download import atualizar_dados
-from producao import consultar_producao
-from processamento import consultar_processamento
+
+# Importando os serviços necessários
+from service.download import atualizar_dados
+from service.producao import consultar_producao
+from service.processamento import consultar_processamento
+from service.importacao import consultar_importacao
+from service.exportacao import consultar_exportacao
+from service.comercializacao import consultar_comercializacao
 
 app = Flask(__name__)
 
@@ -18,20 +23,29 @@ template = {
 
 swagger = Swagger(app, template=template)
 
-@app.route('/comercializacao', methods=['POST'])
+@app.route('/comercializacao', methods=['GET'])
 @swag_from('yml/comercializacao.yml')
 def comercializacao():
-    return jsonify({"message": "Comercialização endpoint is not implemented yet."})
+    ano = request.args.get('ano')
+    produto = request.args.get('produto')
+    resultado, status = consultar_comercializacao(ano=ano, produto=produto)
+    return jsonify(resultado), status
 
-@app.route('/exportacao', methods=['POST'])
+@app.route('/exportacao', methods=['GET'])
 @swag_from('yml/exportacao.yml')
 def exportacao():
-    return jsonify({"message": "Exportação endpoint is not implemented yet."})
+    ano = request.args.get('ano')
+    pais = request.args.get('pais')
+    resultado, status = consultar_exportacao(ano=ano, pais=pais)
+    return jsonify(resultado), status
 
-@app.route('/importacao', methods=['POST'])
+@app.route('/importacao', methods=['GET'])
 @swag_from('yml/importacao.yml')
 def importacao():
-    return jsonify({"message": "Importação endpoint is not implemented yet."})
+    ano = request.args.get('ano')
+    pais = request.args.get('pais')
+    resultado, status = consultar_importacao(ano=ano, pais=pais)
+    return jsonify(resultado), status
 
 @app.route('/processamento', methods=['GET'])
 @swag_from('yml/processamento.yml')

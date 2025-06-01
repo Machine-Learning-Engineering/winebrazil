@@ -12,7 +12,7 @@ parameters:
   - name: ano
     in: query
     type: integer
-    required: false
+    required: true
     description: Ano da produção
 responses:
   200:

@@ -1,25 +1,22 @@
-# filepath: /home/parraes/winebrazil/src/yml/comercializacao.yml
+
 tags:
-  - Comercializacao
+  - exportacao
 consumes:
-  - application/json
+  - application/x-www-form-urlencoded
 parameters:
-  - in: body
-    name: body
+  - name: pais
+    in: query
+    type: string
+    required: false
+    description: País a ser consultado
+  - name: ano
+    in: query
+    type: integer
     required: true
-    schema:
-      type: object
-      properties:
-        produto:
-          type: string
-        quantidade:
-          type: integer
-      required:
-        - produto
-        - quantidade
+    description: Ano da produção
 responses:
   200:
-    description: Comercialização processada com sucesso
+    description: Consulta processada com sucesso
     schema:
       type: object
       properties:

@@ -1,5 +1,5 @@
 tags:
-  - Comercializacao
+  - Atualização da Base de Dados
 consumes:
   - application/json
 parameters:

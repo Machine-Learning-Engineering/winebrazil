@@ -51,7 +51,7 @@ Abaixo a estrura de pasta do projeto
     └── index.html
 ```
 
-** app.py - arquivo de inicialização
+* **app.py** - arquivo de inicialização
 ** Conatainerfile - arquivo de construção da imagem de container
 ** database - pasta contendo os arquivos de dados
 ** requirements.txt - arquivo contendo as dependências do projeto

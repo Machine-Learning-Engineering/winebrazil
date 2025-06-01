@@ -3,9 +3,11 @@ tags:
 consumes:
   - application/json
 parameters:
-  - in: body
-    name: body
+  - name: Authorization
+    in: header
+    type: string
     required: true
+    description: Token de autenticação JWT  
 responses:
   200:
     description: Atualização processada com sucesso

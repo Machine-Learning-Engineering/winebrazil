@@ -35,7 +35,6 @@ load_dotenv()  # Carrega variáveis do .env
 
 SECRET_KEY = os.getenv("SECRET_KEY", "")
 
-
 @app.route('/comercializacao', methods=['GET'])
 @token_required 
 @swag_from('swagger/comercializacao.yml')

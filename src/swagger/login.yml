@@ -1,0 +1,36 @@
+tags:
+  - login
+consumes:
+  - application/json
+parameters:
+  - in: body
+    name: credentials
+    description: User credentials for login
+    required: true
+    schema:
+      type: object
+      properties:
+        username:
+          type: string
+          example: admin
+        password:
+          type: string
+          format: password
+          example: senha123
+responses:
+  200:
+    description: Token gerado com sucesso
+    schema:
+      type: object
+      properties:
+        token:
+          type: string
+          description: JWT token for authentication
+  401:
+    description: Credenciais inválidas
+    schema:
+      type: object
+      properties:
+        erro:
+          type: string
+          description: Error message indicating invalid credentials

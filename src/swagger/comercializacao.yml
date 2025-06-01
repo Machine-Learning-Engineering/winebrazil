@@ -3,6 +3,11 @@ tags:
 consumes:
   - application/x-www-form-urlencoded
 parameters:
+  - name: Authorization
+    in: header
+    type: string
+    required: true
+    description: Token de autenticação JWT
   - name: produto
     in: query
     type: string

@@ -1,9 +1,14 @@
 
 tags:
-  - importacao
+  - exportacao
 consumes:
   - application/x-www-form-urlencoded
 parameters:
+  - name: Authorization
+    in: header
+    type: string
+    required: true
+    description: Token de autenticação JWT
   - name: pais
     in: query
     type: string

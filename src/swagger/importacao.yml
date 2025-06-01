@@ -1,14 +1,19 @@
 
 tags:
-  - processamento
+  - importacao
 consumes:
   - application/x-www-form-urlencoded
 parameters:
-  - name: cultivar
+  - name: Authorization
+    in: header
+    type: string
+    required: true
+    description: Token de autenticação JWT
+  - name: pais
     in: query
     type: string
     required: false
-    description: cultivar a ser consultado
+    description: País a ser consultado
   - name: ano
     in: query
     type: integer

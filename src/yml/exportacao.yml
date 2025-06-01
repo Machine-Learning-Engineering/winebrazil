@@ -1,0 +1,27 @@
+# filepath: /home/parraes/winebrazil/src/yml/comercializacao.yml
+tags:
+  - Comercializacao
+consumes:
+  - application/json
+parameters:
+  - in: body
+    name: body
+    required: true
+    schema:
+      type: object
+      properties:
+        produto:
+          type: string
+        quantidade:
+          type: integer
+      required:
+        - produto
+        - quantidade
+responses:
+  200:
+    description: Comercialização processada com sucesso
+    schema:
+      type: object
+      properties:
+        status:
+          type: string

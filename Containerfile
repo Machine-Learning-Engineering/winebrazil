@@ -10,8 +10,9 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 COPY src/* .
 
-CMD [ "python", "./app.py" ]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app", "--timeout", "30"]

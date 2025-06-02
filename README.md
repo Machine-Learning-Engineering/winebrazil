@@ -1,11 +1,6 @@
 # winebrazil
 API para consulta de no banco de dados de viticultura brasileira.
 
-## Requisitos
-* podman version 5.5.0
-* Python-311
-* Fedora release 41 (Forty One)
-
 ## Sumary
 - [Requisitos](#requisitos)
 - [Sumary](#sumary)
@@ -32,6 +27,12 @@ API para consulta de no banco de dados de viticultura brasileira.
   - [Consultando dados de processamento](#consultando-dados-de-processamento)
   - [Consultando dados de produção](#consultando-dados-de-produção)
 - [Referências](#referências)
+
+
+## Requisitos
+* podman version 5.5.0
+* Python-311
+* Fedora release 41 (Forty One)
 
 ## Estrutura do projeto
 Abaixo a estrura de pasta do projeto

@@ -1,9 +1,12 @@
 # winebrazil
 API para consulta de no banco de dados de viticultura brasileira.
 
-## Sumary
-- [Requisitos](#requisitos)
+## Sumário
+
+- [winebrazil](#winebrazil)
 - [Sumary](#sumary)
+- [Arquitetura](#arquitetura)
+- [Requisitos](#requisitos)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Executando localmente](#executando-localmente)
   - [Configurando ambiente virtual](#configurando-ambiente-virtual)
@@ -20,13 +23,12 @@ API para consulta de no banco de dados de viticultura brasileira.
 - [Realizando testes nas APIs](#realizando-testes-nas-apis)
   - [Definindo variavel de ambiente](#definindo-variavel-de-ambiente)
   - [Obtendo token JWT](#obtendo-token-jwt)
-  - [Utualizando base de dados](#utualizando-base-de-dados)
+  - [Atualizando base de dados](#atualizando-base-de-dados)
   - [Consultando dados de comercialização](#consultando-dados-de-comercialização)
   - [Consultando dados de exportação](#consultando-dados-de-exportação)
   - [Consultando dados de importação](#consultando-dados-de-importação)
   - [Consultando dados de processamento](#consultando-dados-de-processamento)
   - [Consultando dados de produção](#consultando-dados-de-produção)
-- [Referências](#referências)
 
 
 ## Arquitetura
@@ -131,13 +133,13 @@ $ python app.py
 ### Acessando a aplicação
 Abra o navegador e acesse o seguinte endereço:
 ```
-http://127.0.0.1:5000
+$API_URL
 ```
 
 ### Acessando swagger
 Para acessar a documentação das APIs, abra o navegador e acesse o seguinte endereço:
 ```
-http://127.0.0.1:5000/apidocs
+$API_URL/apidocs
 ```
 
 ## Gerando container image
@@ -174,7 +176,7 @@ Caso esteja realizando os testes na cloud, é necessário definir a variável de
 
 * Localmente:
 ```bash
-$ export API_URL=http://127.0.0.1:5000
+$ export API_URL=$API_URL
 ```
 
 * Na cloud:
@@ -190,16 +192,16 @@ $ export TOKEN=$(curl -X POST "$API_URL/login" -H "accept: application/json" -H 
 $ echo $TOKEN
 ```
 
-### Utualizando base de dados
+### Atualizando base de dados
 Para atualizar a base de dados, execute o seguinte comando no terminal:
 ```bash
-$ curl -X GET "http://127.0.0.1:5000/atualiza_base" -H "accept: application/json" -H "Authorization: $TOKEN"
+$ curl -X GET "$API_URL/atualiza_base" -H "accept: application/json" -H "Authorization: $TOKEN"
 ```
 
 ### Consultando dados de comercialização
 Para consultar os dados de comercialização, execute o seguinte comando no terminal:
 ```bash
-curl -X GET "http://127.0.0.1:5000/comercializacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+curl -X GET "$API_URL/comercializacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
 ```
 Output:
 ```json
@@ -460,7 +462,7 @@ Output:
 ### Consultando dados de exportação
 Para consultar os dados de exportação, execute o seguinte comando no terminal:
 ```bash
-curl -X GET "http://127.0.0.1:5000/exportacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+curl -X GET "$API_URL/exportacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
 ```
 Output:
 ```json
@@ -1037,7 +1039,7 @@ Output:
 ### Consultando dados de importação
 Para consultar os dados de importação, execute o seguinte comando no terminal:
 ```bash
-curl -X GET "http://127.0.0.1:5000/importacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+curl -X GET "$API_URL/importacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
 ```
 Output:
 ```json 
@@ -1326,7 +1328,7 @@ Output:
 ### Consultando dados de processamento
 Para consultar os dados de processamento, execute o seguinte comando no terminal:
 ```bash
-curl -X GET "http://127.0.0.1:5000/processamento?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+curl -X GET "$API_URL/processamento?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
 ```
 Output:
 ```json
@@ -1894,7 +1896,7 @@ Output:
 ### Consultando dados de produção
 Para consultar os dados de produção, execute o seguinte comando no terminal:
 ```bash
-$ curl -X GET "http://127.0.0.1:5000/producao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"   
+$ curl -X GET "$API_URL/producao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"   
 ```
 Output:
 ```json
@@ -2107,5 +2109,3 @@ Output:
   ]
 }
 ```
-
-## Referências

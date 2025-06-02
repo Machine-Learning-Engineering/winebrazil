@@ -37,6 +37,12 @@ A arquitetura da aplicação é baseada em Flask, uma microframework para Python
   <img src="https://github.com/Machine-Learning-Engineering/winebrazil/blob/main/docs/fig1.jpeg" alt="Arquitetura da aplicação - Visão Lógica">
 </p>
 
+Na figura abaixo, é apresentada a as APIs disponíveis na aplicação, que são responsáveis por fornecer os dados de comercialização, exportação, importação, processamento e produção de vinhos no Brasil. Para garantir a segurança das APIs, é utilizado o JWT (JSON Web Token) para autenticação e autorização dos usuários. Abaixo a imagem representa a visão logica das APIs disponíveis na aplicação:
+
+<p align="center">
+  <img src="https://github.com/Machine-Learning-Engineering/winebrazil/blob/main/docs/fig2.jpeg" alt="Arquitetura da aplicação - Visão APIs">
+</p>
+
 
 
 ## Requisitos

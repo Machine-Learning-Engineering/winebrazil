@@ -142,6 +142,10 @@ $ podman run -d -p 5000:5000 winebrazil:v1.0
 ```
 
 ## Executando na cloud
+Para executar a aplicação a partir da cloud publica, abra o navegador e acesse o seguinte endereço:
+```
+http://ec2-54-234-51-169.compute-1.amazonaws.com:5000/
+```
 
 ## Realizando testes nas APIs
 
@@ -151,8 +155,14 @@ A seguir estão os passos para realizar testes nas APIs utilizando o curl.
 
 Caso esteja realizando os testes na cloud, é necessário definir a variável de ambiente `API_URL` com o endereço da API.
 
+* Localmente:
 ```bash
 $ export API_URL=http://127.0.0.1:5000
+```
+
+* Na cloud:
+```bash
+$ export API_URL=http://ec2-54-234-51-169.compute-1.amazonaws.com:5000
 ```
 
 ### Obtendo token JWT

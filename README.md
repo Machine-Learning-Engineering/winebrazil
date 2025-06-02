@@ -145,7 +145,7 @@ $ podman run -d -p 5000:5000 winebrazil:v1.0
 ## Executando na cloud
 Para executar a aplicação a partir da cloud publica, abra o navegador e acesse o seguinte endereço:
 ```
-http://ec2-54-234-51-169.compute-1.amazonaws.com:5000/
+http://ec2-54-234-51-169.compute-1.amazonaws.com/
 ```
 
 ## Realizando testes nas APIs

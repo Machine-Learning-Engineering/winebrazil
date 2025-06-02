@@ -993,3 +993,1075 @@ Output:
 ### Consultando dados de importação
 Para consultar os dados de importação, execute o seguinte comando no terminal:
 ```bash
+curl -X GET "http://127.0.0.1:5000/importacao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+```
+Output:
+```json 
+{
+  "dados": [
+    {
+      "País": "Africa do Sul",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Alemanha",
+      "quantidade(L)": "1.164.724"
+    },
+    {
+      "País": "Argentina",
+      "quantidade(L)": "2.724.941"
+    },
+    {
+      "País": "Argélia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Armênia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Arábia Saudita",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Austrália",
+      "quantidade(L)": "130.097"
+    },
+    {
+      "País": "Bermudas",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Bolívia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Brasil",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Bulgária",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Bélgica",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Bósnia-Herzegovina",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Canada",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Chile",
+      "quantidade(L)": "5.559.322"
+    },
+    {
+      "País": "China",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Coreia do Sul, República",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Croácia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Cuba",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Emirados Árabes Unidos",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Eslováquia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Eslovênia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Espanha",
+      "quantidade(L)": "531.425"
+    },
+    {
+      "País": "Estados Unidos",
+      "quantidade(L)": "426.442"
+    },
+    {
+      "País": "França",
+      "quantidade(L)": "3.431.635"
+    },
+    {
+      "País": "Geórgia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Geórgia do Sul e Sandwich do Sul, Ilhas",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Grécia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Hong Kong",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Hungria",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Indonésia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Irlanda",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Israel",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Itália",
+      "quantidade(L)": "8.261.193"
+    },
+    {
+      "País": "Iugoslávia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Japão",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Luxemburgo",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Líbano",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Macedônia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Marrocos",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Moldávia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Montenegro",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "México",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Noruega",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Nova Zelândia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Não consta na tabela",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Não declarados",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Outros",
+      "quantidade(L)": "73.451"
+    },
+    {
+      "País": "Panamá",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Paraguai",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Países Baixos (Holanda)",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Peru",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Porto Rico",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Portugal",
+      "quantidade(L)": "5.011.051"
+    },
+    {
+      "País": "Reino Unido",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Republica Dominicana",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Romênia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Rússia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "San Marino",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Suazilândia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Suíça",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Sérvia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Síria",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Tcheca, República",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Tunísia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Turquia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Ucrânia",
+      "quantidade(L)": "0"
+    },
+    {
+      "País": "Uruguai",
+      "quantidade(L)": "1.961.733"
+    },
+    {
+      "País": "Áustria",
+      "quantidade(L)": "0"
+    }
+  ]
+}
+```
+
+### Consultando dados de processamento
+Para consultar os dados de processamento, execute o seguinte comando no terminal:
+```bash
+curl -X GET "http://127.0.0.1:5000/processamento?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"
+```
+Output:
+```json
+{
+  "dados": [
+    {
+      "cultivar": "Alfrocheiro",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Aliatico",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Alicante Bouschet",
+      "quantidade(L)": "160.318"
+    },
+    {
+      "cultivar": "Aligote",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Altesse",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Alvarinho",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Ancelota",
+      "quantidade(L)": "26.088"
+    },
+    {
+      "cultivar": "Aramon",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Arinarnoa",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Arriloba",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Aspirant Bouschet",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Auxerrois",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "BRANCAS E ROSADAS",
+      "quantidade(L)": "49.613.743"
+    },
+    {
+      "cultivar": "Barbera",
+      "quantidade(L)": "397.479"
+    },
+    {
+      "cultivar": "Bonarda",
+      "quantidade(L)": "67.152"
+    },
+    {
+      "cultivar": "Burger",
+      "quantidade(L)": "13.028"
+    },
+    {
+      "cultivar": "Cabernet Franc",
+      "quantidade(L)": "4.419.829"
+    },
+    {
+      "cultivar": "Cabernet Sauvignon",
+      "quantidade(L)": "4.591.561"
+    },
+    {
+      "cultivar": "Caladoc",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Campanario",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Canaiolo",
+      "quantidade(L)": "4.927"
+    },
+    {
+      "cultivar": "Carignan",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Carmenere",
+      "quantidade(L)": "26.460"
+    },
+    {
+      "cultivar": "Castelão",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Chardonnay",
+      "quantidade(L)": "2.873.611"
+    },
+    {
+      "cultivar": "Chasselas",
+      "quantidade(L)": "179.914"
+    },
+    {
+      "cultivar": "Chenin Blanc",
+      "quantidade(L)": "496.981"
+    },
+    {
+      "cultivar": "Cinsaut",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Clairette(1)",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Colombard",
+      "quantidade(L)": "343.181"
+    },
+    {
+      "cultivar": "Corvina",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Croatina",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Dolcetto",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Dom Felder",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Durif",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Egiodola",
+      "quantidade(L)": "325.911"
+    },
+    {
+      "cultivar": "Ekigaina",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Festival (Sugraone)",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Flora",
+      "quantidade(L)": "581.824"
+    },
+    {
+      "cultivar": "Franconia",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Freisa",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Gamay Beaujolais",
+      "quantidade(L)": "557.368"
+    },
+    {
+      "cultivar": "Gamay St Romain",
+      "quantidade(L)": "86.966"
+    },
+    {
+      "cultivar": "Garganega",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Gewurztraminer",
+      "quantidade(L)": "474.897"
+    },
+    {
+      "cultivar": "Gouveio",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Grand Noir",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Grenache",
+      "quantidade(L)": "298"
+    },
+    {
+      "cultivar": "Gros Manseng",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Italia (Pirovano 65) (PE)",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Jaen",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Lagrein",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Lambrusco",
+      "quantidade(L)": "45.815"
+    },
+    {
+      "cultivar": "Maccabeo",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Malbec",
+      "quantidade(L)": "105.730"
+    },
+    {
+      "cultivar": "Malvasia",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Malvasia Amarela",
+      "quantidade(L)": "400.884"
+    },
+    {
+      "cultivar": "Malvasia Bianca",
+      "quantidade(L)": "1.792.354"
+    },
+    {
+      "cultivar": "Malvasia Chianti",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Malvasia Istriana",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Malvasia Verde",
+      "quantidade(L)": "60.915"
+    },
+    {
+      "cultivar": "Malvasia di Candia",
+      "quantidade(L)": "403.192"
+    },
+    {
+      "cultivar": "Marselan",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Marzemina",
+      "quantidade(L)": "7.765"
+    },
+    {
+      "cultivar": "Merlot",
+      "quantidade(L)": "6.223.276"
+    },
+    {
+      "cultivar": "Mistura de uvas viníferas branco",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Mistura de uvas viníferas rosado",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Mistura de uvas viníferas tinto ",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Molinera",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Montepulciano",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Moscato Bailey",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Moscato Bianco R2",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Moscato Branco",
+      "quantidade(L)": "19.535.723"
+    },
+    {
+      "cultivar": "Moscato Canelli",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Moscato Giallo",
+      "quantidade(L)": "17.700"
+    },
+    {
+      "cultivar": "Moscato Nazareno",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Moscato Rosado",
+      "quantidade(L)": "31.105"
+    },
+    {
+      "cultivar": "Moscato de Alexandria",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Muller Thurgau",
+      "quantidade(L)": "22.207"
+    },
+    {
+      "cultivar": "Muscadelle",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Muscat à Petits Grains",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Napa Gamay",
+      "quantidade(L)": "290.790"
+    },
+    {
+      "cultivar": "Nebbiolo",
+      "quantidade(L)": "80"
+    },
+    {
+      "cultivar": "Ora",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Outras(3)",
+      "quantidade(L)": "73.487"
+    },
+    {
+      "cultivar": "Outras1",
+      "quantidade(L)": "10.833"
+    },
+    {
+      "cultivar": "Palomino",
+      "quantidade(L)": "28.451"
+    },
+    {
+      "cultivar": "Petit Manseng",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Petit Verdot",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Petite Sirah",
+      "quantidade(L)": "177.654"
+    },
+    {
+      "cultivar": "Peverella",
+      "quantidade(L)": "556.215"
+    },
+    {
+      "cultivar": "Pinot Blanc",
+      "quantidade(L)": "486.786"
+    },
+    {
+      "cultivar": "Pinot Gris",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Pinot Noir",
+      "quantidade(L)": "621.890"
+    },
+    {
+      "cultivar": "Pinot Saint George",
+      "quantidade(L)": "255.810"
+    },
+    {
+      "cultivar": "Pinotage",
+      "quantidade(L)": "1.851.305"
+    },
+    {
+      "cultivar": "Piriquita",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Primitivo",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Prosecco",
+      "quantidade(L)": "455.579"
+    },
+    {
+      "cultivar": "Rebo",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Red Veltliner",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Refosco",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Riesling Italico",
+      "quantidade(L)": "8.855.066"
+    },
+    {
+      "cultivar": "Riesling Renano",
+      "quantidade(L)": "380.135"
+    },
+    {
+      "cultivar": "Rondinella",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Ruby Cabernet",
+      "quantidade(L)": "42.699"
+    },
+    {
+      "cultivar": "Sangiovese",
+      "quantidade(L)": "684"
+    },
+    {
+      "cultivar": "Saperavi ",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Sauvignon Blanc(2)",
+      "quantidade(L)": "1.156.987"
+    },
+    {
+      "cultivar": "Sauvignon Gris",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Schonburger",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Seara Nova",
+      "quantidade(L)": "18.890"
+    },
+    {
+      "cultivar": "Semillon",
+      "quantidade(L)": "4.310.660"
+    },
+    {
+      "cultivar": "Sira (falsa)",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Sylvaner",
+      "quantidade(L)": "129.489"
+    },
+    {
+      "cultivar": "TINTAS",
+      "quantidade(L)": "23.975.805"
+    },
+    {
+      "cultivar": "Tannat",
+      "quantidade(L)": "3.487.128"
+    },
+    {
+      "cultivar": "Tempranillo",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Teroldego",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Tinta Barroca",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Tinta Madeira",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Tinta Roriz ",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Tintoria",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Tocai Friulano",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Torrontes",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Touriga Francesa",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Touriga Nacional",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Trebbiano",
+      "quantidade(L)": "5.413.475"
+    },
+    {
+      "cultivar": "Trebbiano Toscano",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Trincdeira",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Trousseau",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Verdea",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Verdelho",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Verdiso",
+      "quantidade(L)": "1.435"
+    },
+    {
+      "cultivar": "Vermentino",
+      "quantidade(L)": "17.835"
+    },
+    {
+      "cultivar": "Vernaccia",
+      "quantidade(L)": "501.737"
+    },
+    {
+      "cultivar": "Viogner ",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Viognier",
+      "quantidade(L)": "0"
+    },
+    {
+      "cultivar": "Zinfandel",
+      "quantidade(L)": "189.989"
+    }
+  ]
+}
+```
+### Consultando dados de produção
+Para consultar os dados de produção, execute o seguinte comando no terminal:
+```bash
+$ curl -X GET "http://127.0.0.1:5000/producao?ano=2000" -H "accept: application/json" -H "Authorization: $TOKEN"   
+```
+Output:
+```json
+{
+  "dados": [
+    {
+      "produto": "Bagaceira",
+      "quantidade(L)": "12.700"
+    },
+    {
+      "produto": "Base Champenoise champanha",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Base Charmat champanha",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Base espumante",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Base espumante moscatel",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Bebida de uva",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Borra líquida",
+      "quantidade(L)": "9.626.928"
+    },
+    {
+      "produto": "Borra seca",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Branco",
+      "quantidade(L)": "44.902.276"
+    },
+    {
+      "produto": "Branco",
+      "quantidade(L)": "36.955.126"
+    },
+    {
+      "produto": "Brandy",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Compostos",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "DERIVADOS",
+      "quantidade(L)": "25.959.016"
+    },
+    {
+      "produto": "Destilado",
+      "quantidade(L)": "1.960"
+    },
+    {
+      "produto": "Destilado alcoólico simples de bagaceira ",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Espumante",
+      "quantidade(L)": "71.410"
+    },
+    {
+      "produto": "Espumante moscatel",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Espumante orgânico",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Filtrado",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Frisante",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Jeropiga",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Licor de bagaceira",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Licorosos",
+      "quantidade(L)": "21.000"
+    },
+    {
+      "produto": "Mistelas",
+      "quantidade(L)": "33.000"
+    },
+    {
+      "produto": "Mosto concentrado",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Mosto de uva com bagaço",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Mosto dessulfitado",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Mosto parcialmente fermentado ",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Mosto simples",
+      "quantidade(L)": "16.192.018"
+    },
+    {
+      "produto": "Néctar de uva",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Outros derivados",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Pisco",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Polpa de uva",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Rosado",
+      "quantidade(L)": "19.880.630"
+    },
+    {
+      "produto": "Rosado",
+      "quantidade(L)": "709.000"
+    },
+    {
+      "produto": "SUCO",
+      "quantidade(L)": "17.722.779"
+    },
+    {
+      "produto": "Suco de uva adoçado",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Suco de uva concentrado",
+      "quantidade(L)": "14.176.000"
+    },
+    {
+      "produto": "Suco de uva integral",
+      "quantidade(L)": "3.546.779"
+    },
+    {
+      "produto": "Suco de uva orgânico",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Suco de uva reconstituído",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Tinto",
+      "quantidade(L)": "208.242.670"
+    },
+    {
+      "produto": "Tinto",
+      "quantidade(L)": "18.545.613"
+    },
+    {
+      "produto": "VINHO DE MESA",
+      "quantidade(L)": "273.025.576"
+    },
+    {
+      "produto": "VINHO FINO DE MESA (VINIFERA)",
+      "quantidade(L)": "56.209.739"
+    },
+    {
+      "produto": "Vinagre",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Vinho Composto",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Vinho acidificado ",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Vinho leve",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Vinho licoroso",
+      "quantidade(L)": "0"
+    },
+    {
+      "produto": "Vinho orgânico",
+      "quantidade(L)": "0"
+    }
+  ]
+}
+```
+
+## Referências

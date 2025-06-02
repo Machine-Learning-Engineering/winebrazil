@@ -3,6 +3,7 @@ FROM registry.access.redhat.com/ubi8/python-311:latest
 LABEL maintainer="Pedro Arraes <pedroarraes@gmail.com>"
 LABEL maintainer="Rogério Santos <br.roglusa@gmail.com>"
 LABEL maintainer="Juares Junior <jzs.jjunior@gmail.com>"
+LABEL maintainer="Sandro Tanaka <sandrotanaka@gmail.com>"
 
 LABEL name="Wine Brazil API"
 LABEL description="API para consulta de dado agricula de viticultura, com foco em uva e vinho no Brasil."
@@ -28,8 +29,5 @@ RUN dnf update -y && \
     chown -R 1001:1001 /app 
 
 USER 1001
-
-
-#CMD ["python", "-m", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app", "--timeout", "30"]

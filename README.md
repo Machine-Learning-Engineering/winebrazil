@@ -33,7 +33,7 @@ API para consulta de no banco de dados de viticultura brasileira.
 
 A arquitetura da aplicação é baseada em Flask, uma microframework para Python, que permite a criação de APIs RESTful de forma rápida e fácil. A aplicação é dividida em camadas, onde cada camada tem uma responsabilidade específica. Abaixo a imagem representa a visão logica da arquitetura da aplicação:
 
-![Arquitetura da aplicação - Visão Lógica](https://github.com/Machine-Learning-Engineering/winebrazil/blob/main/docs/fig1.jpeg)
+![Arquitetura da aplicação - Visão Lógica, align="center"](https://github.com/Machine-Learning-Engineering/winebrazil/blob/main/docs/fig1.jpeg)[align="center"]
 
 
 
